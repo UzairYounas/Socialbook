@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socialbook</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7e92c6b034.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">
+            <img src="images/logo.png" class="logo">
+            </a>
+
+            <ul>
+                <li><img src="images/notification.png"></li>
+                <li><img src="images/inbox.png"></li>
+                <li><img src="images/video.png"></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="nav-user-icon online" onclick="SeetingsMenuToggle()">
+                <img src="images/profile-pic.png">
+            </div>
+        </div>
+
+        <!----- Dropdown-seetings-menu ----->
+
+        <div class="seetings-menu">
+
+            <div id="dark-btn">
+                <span></span>
+            </div>
+            <div class="seetings-menu-inner">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>John Nicholoson</p>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="user-profile">
+                    <img src="images/feedback.png">
+                    <div>
+                        <p>Give Your Feedback</p>
+                        <a href="#">Help us to improve the new design</a>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="seetings-link">
+                    <img src="images/setting.png" class="seetings-icon">
+                    <a href="#">Seetings and Privacy <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="seetings-link">
+                    <img src="images/help.png" class="seetings-icon">
+                    <a href="#">Help & Support <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="seetings-link">
+                    <img src="images/display.png" class="seetings-icon">
+                    <a href="#">Display & Accessibility <img src="images/arrow.png" width="10px"></a>
+                </div>
+                <div class="seetings-link">
+                    <img src="images/logout.png" class="seetings-icon">
+                    <a href="#">Logout <img src="images/arrow.png" width="10px"></a>
+                </div>
+            </div>
+        </div>
+
+    </nav>
+
+    <div class="container">
+        <!--- Left-sidebar content --->
+        <div class="left-sidebar">
+            <div class="imp-link">
+                <a href="#"><img src="images/news.png">Latest News</a>
+                <a href="#"><img src="images/friends.png">Friends</a>
+                <a href="#"><img src="images/group.png">Group</a>
+                <a href="#"><img src="images/marketplace.png">Marketplace</a>
+                <a href="#"><img src="images/watch.png">Watch</a>
+                <a href="#">See more</a>
+            </div>
+
+            <div class="shortcut-links">
+                <p>Your Shortcuts</p>
+                <a href="#"><img src="images/shortcut-1.png">Web Developer</a>
+                <a href="#"><img src="images/shortcut-2.png">Web Design course</a>
+                <a href="#"><img src="images/shortcut-3.png">Full Stack Developer</a>
+                <a href="#"><img src="images/shortcut-4.png">Web Expert</a>
+            </div>
+        </div>
+        <!------- main content -------->
+        <div class="main-content">
+
+            <!-- Story Section -->
+
+            <div class="story-gallery">
+                <div class="story story1">
+                    <img src="images/upload.png">
+                    <p>Post Story</p>
+                </div>
+                <div class="story story2">
+                    <img src="images/member-1.png">
+                    <p>Alison</p>
+                </div>
+                <div class="story story3">
+                    <img src="images/member-2.png">
+                    <p>Jackson</p>
+                </div>
+                <div class="story story4">
+                    <img src="images/member-3.png">
+                    <p>Samona</p>
+                </div>
+                <div class="story story5">
+                    <img src="images/member-4.png">
+                    <p>John Doe</p>
+                </div>
+            </div>
+
+            <div class="write-post-container">
+                <div class="user-profile">
+                    <img src="images/profile-pic.png">
+                    <div>
+                        <p>John Nicholoson</p>
+                        <small>Public  <i class="fa-solid fa-caret-down"></i></small>
+                    </div>
+                </div>
+
+                <div class="post-input-container">
+                    <textarea placeholder="What's on your mind, John?" rows="3"></textarea>
+
+                    <div class="add-post-link">
+                        <a href="#"><img src="images/live-video.png">Live video</a>
+                        <a href="#"><img src="images/photo.png">Photo/video</a>
+                        <a href="#"><img src="images/feeling.png">Feeling/Activtty</a>
+                    </div>
+                </div>
+            </div>
+
+            <!----- Users Post Area ----->
+            <div class="post-container">
+                <div class="post-row">  
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>John Nicholoson</p>
+                            <span>August 2 2023, 12:30 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">In this project you will see exactly the clone of <span>@facebook</span>. If you like it, then please appreciate this coder. <a href="#">#Web Developer</a> <a href="#">#Web Design</a></p>
+                <img src="images/feed-image-1.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like-blue.png">120</div>
+                        <div><img src="images/comments.png">35</div>
+                        <div><img src="images/share.png">17</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">  
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>John Nicholoson</p>
+                            <span>August 2 2023, 12:30 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">There are only five posts of <span>@facebook</span>. because it is only a clone not a real. <a href="#">#facebook</a> <a href="#">#YouTube</a></p>
+                <img src="images/feed-image-2.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like.png">300</div>
+                        <div><img src="images/comments.png">120</div>
+                        <div><img src="images/share.png">78</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">  
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>John Nicholoson</p>
+                            <span>August 2 2023, 12:30 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">There are only five posts of <span>@facebook</span>. because it is only a clone not a real. <a href="#">#facebook</a> <a href="#">#YouTube</a></p>
+                <img src="images/feed-image-3.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like.png">700</div>
+                        <div><img src="images/comments.png">350</div>
+                        <div><img src="images/share.png">450</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">  
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>John Nicholoson</p>
+                            <span>August 2 2023, 12:30 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">There are only five posts of <span>@facebook</span>. because it is only a clone not a real. <a href="#">#facebook</a> <a href="#">#YouTube</a></p>
+                <img src="images/feed-image-4.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like.png">1.2k</div>
+                        <div><img src="images/comments.png">700</div>
+                        <div><img src="images/share.png">900</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post-container">
+                <div class="post-row">  
+                    <div class="user-profile">
+                        <img src="images/profile-pic.png">
+                        <div>
+                            <p>John Nicholoson</p>
+                            <span>August 2 2023, 12:30 am</span>
+                        </div>
+                    </div>
+                    <a href="#"><i class="fa-solid fa-ellipsis-v"></i></a>
+                </div>
+                <p class="post-text">There are only five posts of <span>@facebook</span>. because it is only a clone not a real. <a href="#">#facebook</a> <a href="#">#YouTube</a></p>
+                <img src="images/feed-image-5.png" class="post-img">
+
+                <div class="post-row">
+                    <div class="activity-icon">
+                        <div><img src="images/like.png">3.7k</div>
+                        <div><img src="images/comments.png">984</div>
+                        <div><img src="images/share.png">1.2k</div>
+                    </div>
+                    <div class="post-profile-icon">
+                        <img src="images/profile-pic.png"> <i class="fa-solid fa-caret-down"></i>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="load-more-btn">Load More</button>
+        </div>
+        <!------- right-sidebar content ------->
+        <div class="right-sidebar">
+
+            <div class="sidebar-title">
+                <h4>Events</h4>
+                <a href="#">See All</a>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>18</h3>
+                    <span>March</span>
+                </div>
+                <div class="right-event">
+                    <h4>Social Media</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> Willson Tech Park</p>
+                    <a href="#">More Info</a>
+                </div>
+            </div>
+
+            <div class="event">
+                <div class="left-event">
+                    <h3>22</h3>
+                    <span>June</span>
+                </div>
+                <div class="right-event">
+                    <h4>Mobile Marketing</h4>
+                    <p><i class="fa-sharp fa-solid fa-location-dot"></i> National Amuse Park</p>
+                    <a href="#">More Info</a>
+                </div>
+
+            </div>
+
+            <div class="sidebar-title">
+                <h4>Advertisement</h4>
+                <a href="#">close</a>
+            </div>
+            <img src="images/advertisement.png" class="sidebar-ads">
+
+            <div class="sidebar-title">
+                <h4>Conversation</h4>
+                <a href="#">Hide Chat</a>
+            </div>
+
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-1.png">
+                </div>
+                    <p>Alison Mina</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-2.png">
+                </div>
+                    <p>Jackson Aston</p>
+            </div>
+            <div class="online-list">
+                <div class="online">
+                    <img src="images/member-3.png">
+                </div>
+                    <p>Samona Rose</p>
+            </div>
+
+        </div>
+    </div>
+    <!---- Footer ---->
+    <div class="footer">
+        <p>&copy;CopyWright - Uzair Younas Web Developer</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
